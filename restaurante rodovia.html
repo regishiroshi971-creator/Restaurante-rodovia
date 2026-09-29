@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Restaurante Rodovia em Dracena — café da manhã, almoço, jantar e comida brasileira.">
+<title>Restaurante Rodovia | Dracena</title>
+<style>
+:root{--navy:#102a43;--blue:#1769aa;--gold:#e7aa2b;--cream:#fffaf0;--ink:#182530;--muted:#68747d;--white:#fff}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+html,body{width:100%;max-width:100%;overflow-x:hidden} body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+a{color:inherit;text-decoration:none} .container{width:min(1140px,92%);max-width:100%;margin:auto;min-width:0}
+.top{background:var(--navy);color:#fff;font-size:13px} .top-in{min-height:38px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.nav{position:sticky;top:0;z-index:20;background:rgba(255,250,240,.96);backdrop-filter:blur(10px);border-bottom:1px solid #e6ddcc}
+.nav-in{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:1000;color:var(--navy)}
+.logo-mark{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--blue);color:#fff;font-size:22px}
+.logo b{color:var(--blue)} .links{display:flex;gap:22px;font-size:14px;font-weight:800} .links a:hover{color:var(--blue)}
+.hero{color:#fff;background:linear-gradient(105deg,rgba(8,30,48,.94),rgba(23,105,170,.78)),url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/39/0c/38/caption.jpg?h=1200&s=1&w=1200") center/cover;position:relative}
+.hero-in{min-height:680px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);align-items:center;gap:50px;min-width:0}
+.eyebrow{font-size:12px;font-weight:1000;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+h1{font-size:clamp(45px,7vw,80px);line-height:.93;letter-spacing:-.055em;margin:14px 0 18px}
+.hero p{font-size:18px;line-height:1.7;color:#e8f1f7;max-width:650px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 20px;border-radius:10px;font-weight:900}
+.primary{background:var(--gold);color:#161616} .white{background:#fff;color:var(--navy)}
+.hero-card{min-width:0;max-width:100%;overflow:hidden;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:22px;padding:12px;box-shadow:0 25px 70px rgba(0,0,0,.3)}
+.hero-card img{width:100%;height:420px;object-fit:cover;border-radius:15px;display:block}
+.photo-credit{font-size:11px;color:#d8e5ee;margin:9px 4px 2px}
+.strip{background:var(--gold);color:#151515;text-align:center;font-weight:1000;padding:13px;text-transform:uppercase}
+.section{padding:82px 0} .section.alt{background:#f1e8d8}
+.title{text-align:center;max-width:720px;margin:0 auto 40px} .title h2{font-size:clamp(34px,5vw,54px);color:var(--navy);line-height:1.15;margin:8px 0 13px;letter-spacing:-.045em;overflow:visible;display:block}
+.title p{color:var(--muted);line-height:1.65}
+.gallery{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.8fr);grid-template-rows:260px 260px;gap:14px;min-width:0}
+.gallery-item{position:relative;overflow:hidden;border-radius:18px;background:#ddd;min-height:180px}
+.gallery-item:first-child{grid-row:1/3}
+.gallery-item img{width:100%;max-width:100%;height:100%;object-fit:cover;display:block;transition:.3s}
+.gallery-item:hover img{transform:scale(1.04)}
+.gallery-item span{position:absolute;left:12px;right:12px;bottom:12px;padding:9px 11px;border-radius:9px;background:rgba(0,0,0,.65);color:#fff;font-size:12px;font-weight:700}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+.card{background:#fff;border:1px solid #e2d9c9;border-radius:17px;padding:24px;box-shadow:0 8px 24px rgba(0,0,0,.05)}
+.card .ico{font-size:28px;margin-bottom:18px} .card h3{color:var(--navy);margin:0 0 8px} .card p{color:var(--muted);font-size:14px;line-height:1.55;margin:0}
+.info{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;min-width:0}.info-card{background:#fff;border:1px solid #e2d9c9;border-radius:18px;padding:26px;min-width:0;overflow:hidden}.info-card h3,.info-card p{overflow-wrap:anywhere;word-break:break-word}.info-card .btn{max-width:100%;white-space:normal;text-align:center;justify-content:center;margin:16px auto 0}.info-card{text-align:center}.info-card p{text-align:center}.info-card h3{text-align:center}
+.info-card h3{margin:0 0 14px;color:var(--navy)} .info-card p{margin:7px 0;color:var(--muted);line-height:1.65}
+.cta{background:var(--navy);color:#fff} .cta-box{display:grid;grid-template-columns:1fr auto;gap:25px;align-items:center;background:linear-gradient(100deg,#0e3554,#1769aa);padding:35px;border-radius:22px}
+.cta h2{margin:0 0 8px;font-size:38px;line-height:1.15;overflow:visible} .cta p{margin:0;color:#d7e5ee;line-height:1.6}
+footer{background:#091a28;color:#b8c5ce;padding:30px 0;font-size:13px} .foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media (max-width:900px){
+  .container{width:92%;max-width:100%;}
+  .top{font-size:11px}
+  .top-in{min-height:34px;gap:8px;flex-wrap:nowrap}
+  .nav-in{height:64px;gap:12px;overflow:visible}
+  .logo{font-size:16px;gap:7px;white-space:nowrap;flex:0 1 auto;min-width:0}
+  .logo-mark{width:38px;height:38px;font-size:18px;flex:0 0 38px}
+  .links{display:flex;gap:11px;font-size:10px;white-space:nowrap;flex:0 0 auto}
+  .hero-in{grid-template-columns:minmax(0,1.05fr) minmax(260px,.95fr);gap:20px;min-height:500px}
+  .eyebrow{font-size:10px;letter-spacing:.14em}
+  h1{font-size:52px;line-height:.96;letter-spacing:-.045em;margin:12px 0 16px}
+  .hero p{font-size:14px;line-height:1.55}
+  .buttons{margin-top:20px;gap:8px}
+  .btn{padding:11px 14px;font-size:12px}
+  .hero-card{padding:9px;border-radius:18px}
+  .hero-card img{height:310px;border-radius:12px}
+  .photo-credit{font-size:9px}
+  .section{padding:62px 0}
+  .title h2{font-size:36px}
+  .gallery{grid-template-columns:minmax(0,1.35fr) minmax(0,.8fr);grid-template-rows:220px 220px;gap:10px}
+  .cards{grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+  .card{padding:16px}
+  .card h3{font-size:14px}.card p{font-size:11px}
+  .info{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .info-card{padding:20px 14px}
+  .info-card h3{font-size:14px}.info-card p{font-size:12px}
+  .cta-box{grid-template-columns:1fr auto;gap:15px;padding:28px}
+  .cta h2{font-size:28px}
+}
+@media (max-width:620px){
+  .top-in{font-size:10px}
+  .nav-in{height:60px}
+  .logo{font-size:15px}
+  .logo-mark{width:36px;height:36px;flex-basis:36px}
+  .links{gap:8px;font-size:9px}
+  .links a:nth-child(-n+2){display:none}
+  .hero-in{grid-template-columns:1fr;min-height:auto;padding:54px 0}
+  h1{font-size:46px}
+  .hero-card img{height:280px}
+  .gallery{grid-template-columns:1fr;grid-template-rows:280px 220px 220px}
+  .gallery-item:first-child{grid-row:auto}
+  .cards{grid-template-columns:1fr 1fr}
+  .info{grid-template-columns:1fr}
+  .cta-box{grid-template-columns:1fr;text-align:center}
+  .cta-box .btn{justify-content:center;margin:0 auto}
+}
+</style>
+</head>
+<body>
+<div class="top"><div class="container top-in"><span>📍 Dracena • SP</span><span>📞 55 18 99650-6377</span></div></div>
+
+<header class="nav"><div class="container nav-in">
+<a class="logo" href="#inicio"><span class="logo-mark">🍽️</span>RESTAURANTE <b>RODOVIA</b></a>
+<nav class="links"><a href="#fotos">Fotos</a><a href="#experiencia">Experiência</a><a href="#informacoes">Informações</a><a href="https://www.instagram.com/restauranterodovia/" target="_blank" rel="noopener">Instagram</a></nav>
+</div></header>
+
+<main id="inicio">
+<section class="hero"><div class="container hero-in">
+<div>
+<div class="eyebrow">Restaurante • Cafeteria • Comida brasileira</div>
+<h1>Uma boa parada em Dracena.</h1>
+<p>Café da manhã, almoço e jantar em um restaurante pensado para quem mora na cidade e para quem está na estrada.</p>
+<div class="buttons">
+<a class="btn primary" href="https://wa.me/5518996506377?text=Ol%C3%A1%20Restaurante%20Rodovia%21%20Gostaria%20de%20saber%20mais." target="_blank" rel="noopener">📲 WhatsApp</a>
+<a class="btn white" href="#fotos">Ver fotos</a>
+</div>
+</div>
+<div class="hero-card"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/39/0c/38/caption.jpg?h=500&s=1&w=900" alt="Fachada do Restaurante Rodovia em Dracena"><div class="photo-credit">Foto pública da ficha do restaurante no Tripadvisor.</div></div>
+</div></section>
+
+<div class="strip">Café da manhã • Almoço • Jantar • Buffet • Churrasco</div>
+
+<section class="section" id="fotos"><div class="container">
+<div class="title"><div class="eyebrow">Galeria</div><h2>Conheça o Restaurante Rodovia</h2><p>Fotos públicas encontradas na ficha do estabelecimento. Clique em uma foto para abrir a fonte.</p></div>
+<div class="gallery"><a class="gallery-item" href="https://www.tripadvisor.com.br/Restaurant_Review-g2346580-d27130345-Reviews-Restaurante_Rodovia-Dracena_State_of_Sao_Paulo.html" target="_blank" rel="noopener">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/39/0c/38/caption.jpg?h=500&s=1&w=900" alt="Fachada do Restaurante Rodovia" loading="lazy">
+      <span>Fachada do Restaurante Rodovia · Foto pública</span>
+    </a>
+<a class="gallery-item" href="https://www.tripadvisor.com.br/Restaurant_Review-g2346580-d27130345-Reviews-Restaurante_Rodovia-Dracena_State_of_Sao_Paulo.html" target="_blank" rel="noopener">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/39/0c/37/caption.jpg?h=800&s=1&w=800" alt="Foto pública do Restaurante Rodovia" loading="lazy">
+      <span>Foto pública do Restaurante Rodovia · Foto pública</span>
+    </a>
+<a class="gallery-item" href="https://www.tripadvisor.com.br/Restaurant_Review-g2346580-d27130345-Reviews-Restaurante_Rodovia-Dracena_State_of_Sao_Paulo.html" target="_blank" rel="noopener">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/39/0c/39/caption.jpg?h=1200&s=1&w=1200" alt="Foto pública do Restaurante Rodovia" loading="lazy">
+      <span>Foto pública do Restaurante Rodovia · Foto pública</span>
+    </a></div>
+</div></section>
+
+<section class="section alt" id="experiencia"><div class="container">
+<div class="title"><div class="eyebrow">No seu dia</div><h2>Comida para diferentes momentos</h2><p>O restaurante é listado como de culinária brasileira e sul-americana, com café da manhã, almoço e jantar.</p></div>
+<div class="cards">
+<div class="card"><div class="ico">☕</div><h3>Café da manhã</h3><p>Uma opção para começar o dia antes de seguir viagem ou para quem está em Dracena.</p></div>
+<div class="card"><div class="ico">🍛</div><h3>Almoço</h3><p>Comida brasileira e opções de buffet para uma refeição completa.</p></div>
+<div class="card"><div class="ico">🔥</div><h3>Churrasco</h3><p>O perfil público do restaurante menciona churrasco entre as opções apreciadas pelos visitantes.</p></div>
+<div class="card"><div class="ico">🍗</div><h3>Comida caseira</h3><p>Uma proposta simples e acolhedora para quem procura uma refeição tradicional.</p></div>
+</div></div></section>
+
+<section class="section" id="informacoes"><div class="container">
+<div class="title"><div class="eyebrow">Visite</div><h2>Informações</h2></div>
+<div class="info">
+<div class="info-card"><h3>📍 Endereço</h3><p>José Dansieri, 771 — Metrópole<br>Dracena — SP</p><a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=José+Dansieri+771+Dracena+SP" target="_blank" rel="noopener">Abrir no mapa</a></div>
+<div class="info-card"><h3>🕐 Horários</h3><p>Segunda a sexta: 06:30–22:00<br>Sábado: 06:30–14:30<br>Domingo: fechado</p><p style="font-size:12px">Confirme antes de sair, pois horários podem mudar.</p></div>
+</div></div></section>
+
+<section class="section cta"><div class="container"><div class="cta-box">
+<div><h2>Fale com o Restaurante Rodovia</h2><p>55 18 99650-6377<br><a href="https://www.instagram.com/restauranterodovia/" target="_blank" rel="noopener">@restauranterodovia</a></p></div>
+<a class="btn primary" href="https://wa.me/5518996506377?text=Ol%C3%A1%20Restaurante%20Rodovia%21" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+</div></div></section>
+</main>
+
+<footer><div class="container foot"><span>© 2026 Restaurante Rodovia</span><span>Fotos públicas: Tripadvisor</span></div></footer>
+</body>
+</html>
